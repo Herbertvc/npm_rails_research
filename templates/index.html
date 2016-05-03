@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block content %}
+  <h1>{{ title|safe }}</h1>
+  <p>Welcome to </p>
+
+  <a href="/users">Users</a>
+
+  <ul>
+    {% for item in arr  %}
+      <li>{{ item }}</li>
+    {% endfor %}
+  </ul>
+{% endblock %}
